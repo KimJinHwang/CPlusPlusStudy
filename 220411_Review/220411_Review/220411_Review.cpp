@@ -281,11 +281,19 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
 int main()
 {
+    stringstream ss;
+
+    ss << "Hello";
+    string str;
+    ss >> str;
+    cout << str << endl;
+
     for (int gugu_dan = 2; gugu_dan < 10; gugu_dan++)
     {
         for (int gugu_su = 1; gugu_su < 10; gugu_su++)
